@@ -1,0 +1,13 @@
+// myschema.fbs
+namespace leads;
+
+table Lead {
+    id: int32;
+    firstname: string;
+    lastname: string;
+}
+
+table ListLeadFb {
+    list: [Lead];
+}
+root_type ListLeadFb;
